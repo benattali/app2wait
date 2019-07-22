@@ -1,0 +1,64 @@
+// #sentences {
+//   h4 {
+//     color: $white;
+//     font-weight: 800;
+//     margin-bottom: 25px;
+//   }
+// }
+
+.firsttimer {
+  padding-top: 4%;
+}
+.secondtimer{
+  padding-top: 4%;
+}
+.lasttimer{
+  padding-top: 4%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.edit-disclaimer {
+  font-size: 15px;
+}
+
+@media(min-width: 600px) {
+  .show {
+    display: none;
+  }
+  .msg {
+    color: $black;
+    h1 {
+      color: $orange;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+      font-size: 45px;
+      font-weight: bold;
+      text-align: center;
+      border: 2px black;
+      text-shadow:
+      1px  1px 2px black,
+      1px -1px 2px black,
+      -1px  1px 2px black,
+      -1px -1px 2px black;
+      margin: 8px;
+    }
+    img {
+      width: 25px;
+    }
+    p {
+      margin-right: 8px;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .msg {
+    display: none;
+  }
+}

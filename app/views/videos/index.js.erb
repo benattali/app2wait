@@ -1,0 +1,6 @@
+function reloadVideos() {
+  var videos = document.querySelector('.all-videos');
+  videos.innerHTML = '<%= j render "videos", videos: @videos %>'
+}
+
+reloadVideos();

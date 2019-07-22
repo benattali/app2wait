@@ -1,0 +1,91 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon mb-3">
+  <%= link_to challenges_path, class: "navbar-brand" do %>
+  <%= image_tag asset_url('logo_original_size.png') %>
+  <% end %>
+  <h4 class="mt-2"> <%= @challenge.name %> </h4>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <% if user_signed_in? %>
+      <li class="nav-item">
+        <%= link_to "Videos", videos_path, class: "nav-links" %>
+      </li>
+      <% if current_user.events.last %>
+      <% @event_navbar = Event.find(current_user.events.last.id) %>
+      <li class="nav-item">
+        <%= link_to "Last challenge", @event_navbar, class: "nav-links" %>
+      </li>
+      <% end %>
+      <li class="nav-item dropdown">
+        <%= cl_image_tag (current_user.photo), class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+        </div>
+      </li>
+      <% else %>
+      <li class="nav-item">
+        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+<!-- <div class="container"> -->
+  <!-- <h5 class="text-center mb-0"> <%#= @challenge.name %>'s steps:</h5> -->
+  <div>
+    <h4 class="text-center mt-4"><%#= @challenge.name %>Challenge details</h4>
+    <div class="card-product my-3">
+      <div class="card-time">
+        <h3>10 <br> min</h3>
+        <%#=  image_tag asset_url('quarter.png')%>
+      </div>
+      <div class="card-product-infos-ch">
+        <h4>  <%= @challenge.levels.first.description %> </h4>
+      </div>
+    </div>
+    <h4 class="text-center mt-4"></h4>
+    <div class="card-product my-3">
+      <div class="card-time very-late">
+        <%#=  image_tag asset_url('half-an-hour.png')%>
+        <h3>20 <br> min</h3>
+      </div>
+      <div class="card-product-infos-ch">
+        <h4>  <%= @challenge.levels.second.description %> </h4>
+      </div>
+    </div>
+    <h4 class="text-center mt-4"></h4>
+    <div class="card-product my-3">
+      <div class="card-time">
+        <%#=  image_tag asset_url('three-quarters.png')%>
+        <h3>30 <br>min</h3>
+      </div>
+      <div class="card-product-infos-ch">
+        <h4>  <%= @challenge.levels.last.description %> </h4>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container d-flex">
+
+    <div class="" style="width:70%;">
+      <h3 style="margin-bottom: 25px;"> <strong>Select a group:</strong> </h3>
+    </div>
+
+        <div class="" id="toggle-form" style="color: #0A2463;">
+          <!-- <p>Create a group</p> -->
+          <p style="font-size:20px;"> <ins>New group</ins></p>
+        </div>
+
+  </div>
+  <%= render 'groups/form' %>
+  <%= render 'events/form' %>
+
+  <!-- ➕ -->
+  <br>
+  <%#= link_to "Back to all Challenges", challenges_path, class: 'text-secondary'%>
+  <!-- </div> -->
+  <br>
+
+

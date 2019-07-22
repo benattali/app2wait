@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body style="font-family: Comfortaa;">
+    <div class="d-flex">
+      <h1 class="text-center mb-5 pt-3 pb-3" style="background-color: #FF9701; width:100%;">App2Wait
+      <!-- <img src="https://image.flaticon.com/icons/svg/1584/1584942.svg" alt="" style="height:50px;"> -->
+      </h1>
+
+    </div>
+    <div class="container" >
+
+
+      <h2 class="mb-3"><strong>Hey Buddy,</strong></h2>
+
+      <h3 class="mb-3">Because you are late, a challenge has been launched in the group: "<%= @group.name %>".</h3>
+      <h3 class="mb-3">You better hurry if you don't want to have to do crazy challenges!</h3>
+
+      <h2 class="mt-5 mb-3 text-center">Check out your challenge <%= link_to "here.", event_url(@event)%></h2>
+      <img src="https://media.giphy.com/media/7SIdExk63rTPXhbbbt/giphy.gif" style="  display: block; margin-left: auto; margin-right: auto; width: 50%;">
+      <br>
+      <br>
+      <br>
+    </div>
+
+      <p>The App2wait team</p>
+  </body>
+
+</html>
+
+
+
+

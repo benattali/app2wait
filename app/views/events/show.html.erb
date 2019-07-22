@@ -1,0 +1,73 @@
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <%= link_to challenges_path, class: "navbar-brand" do %>
+    <%= image_tag asset_url('logo_original_size.png') %>
+    <% end %>
+    <h5 class="text-center mt-1">Waiting for<br><%= @event.group.name %></h5>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to "Videos", videos_path, class: "nav-links" %>
+        </li>
+        <li class="nav-item dropdown">
+          <%= cl_image_tag (current_user.photo), class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+          </div>
+        </li>
+        <% else %>
+        <li class="nav-item">
+          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+  <div class="gif mb-4">
+    <img src="https://cdn.dribbble.com/users/1498470/screenshots/4498386/hourglass.gif" alt="Time" id="time-gif">
+  </div>
+  <div class="transition"></div>
+  <div class="container mt-1">
+    <div class="card-product mt-2 mb-2 disabled" id="first-level" data-finish-time="<%= @event.events_levels.first.challenge_end_time %>" data-current-time="<%= Time.now.utc %>">
+      <div class="card-time firsttimer" style="padding-top: 7%; font-size: 30px;">
+      </div>
+      <div class="card-product-infos">
+       <h4><%= @event.events_levels.first.description %></h4>
+     </div>
+   </div>
+   <div class="card-product my-2 disabled" id="second-level" data-finish-time="<%= @event.events_levels.second.challenge_end_time %>" data-current-time="<%= Time.now.utc %>">
+    <div class="card-time secondtimer" style="padding-top: 7%; font-size: 30px;">
+    </div>
+    <div class="card-product-infos">
+     <h4><%= @event.events_levels.second.description %></h4>
+   </div>
+ </div>
+ <div class="card-product mt-2 mb-3 disabled" id="last-level" data-finish-time="<%= @event.events_levels.last.challenge_end_time %>" data-current-time="<%= Time.now.utc %>">
+  <div class="card-time lasttimer" style="padding-top: 7%; font-size: 30px;">
+  </div>
+  <div class="card-product-infos">
+   <h4><%= @event.events_levels.last.description %></h4>
+ </div>
+</div>
+
+ <p class="text-center" style="margin-bottom: -8%;"><ins><%= link_to "Set your own times", edit_event_path(@event), class: "text-warning mb-3 text-center h1", id: "event-edit" %></ins></p>
+<br>
+<br>
+<%= link_to "Videos of challenges", videos_path, class: 'btn btn-primary btn-block btn-lg font-weight-bold' %>
+
+<div class="video-show btn btn-outline-primary btn-block btn-lg mb-3 font-weight-bold" > Save the moment 🎥 </div>
+
+</div>
+<div class="container d-none" id="video_new">
+<%= render 'videos/form' %>
+</div>
+
+<%#= link_to "Cancel Challenge", event_path(@event), method: :delete, class: 'text-secondary' %>
+
+
+<%= content_for :after_js do  %>
+<%= javascript_pack_tag 'timer' %>
+<% end %>

@@ -1,0 +1,12 @@
+<h1>Upload the video</h1>
+
+
+<%= simple_form_for @video do |f| %>
+<%= f.input :tag %>
+<%= f.file_field :video%>
+<%= f.input :challenge, as: :radio_buttons, collection: Challenge.all, wrapper: :vertical_collection_inline %>
+<%= f.submit "Upload Video", class: "btn btn-primary" %>
+<% end %>
+
+
+

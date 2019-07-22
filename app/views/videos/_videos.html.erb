@@ -1,0 +1,15 @@
+  <% videos.each do |v| %>
+    <div class="card-trip">
+<!--         <%#= cl_video_tag(v.video_url.to_s, :controls => true, :poster => true) %> -->
+      <video controls autoplay>
+        <source src="<%= v.video_url.to_s %>" type="video/mp4">
+      </video>
+      <div class="card-trip-infos">
+        <div>
+        <h2> <%= v.tag %>  </h2>
+        <p> <strong>Challenge:</strong>  <%= v.challenge.name %></p>
+        </div>
+        <%= cl_image_tag (v.user.photo), class:"card-trip-user avatar-bordered" %>
+      </div>
+    </div>
+  <% end %>

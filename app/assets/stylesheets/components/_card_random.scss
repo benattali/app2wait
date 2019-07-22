@@ -1,0 +1,35 @@
+.card-random {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+  padding-bottom: 1%;
+  border-radius: 5px;
+  color: #343a40;
+}
+
+.card-random img {
+  height: 80%;
+}
+
+.card-random p {
+  font-size: 30px;
+  font-weight: bold;
+  border: #343a40;
+  margin: 0;
+}
+
+// .card-random p {
+//   font-size: 12px;
+//   line-height: 1.4;
+//   opacity: .7;
+//   margin-bottom: 0;
+//   margin-top: 8px;
+// }
+
+.card-random .card-random-infos {
+  padding: 16px;
+}

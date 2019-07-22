@@ -1,0 +1,7 @@
+<%= form_tag videos_path, method: :get, remote: true do %>
+  <%= select_tag :query,
+    options_from_collection_for_select(@challenges, 'id', 'name'), prompt: "All",
+    class: "form-control mb-1"
+  %>
+  <%= submit_tag "Find videos", name: nil, class: 'btn btn-primary btn-block' %>
+<% end %>
