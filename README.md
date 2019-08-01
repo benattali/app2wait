@@ -12,7 +12,7 @@ Steps:
 
 # Installation
 
-Given this repository you should copy the `.env.sample` file into an `.env` file inserting your own credentials. 
+Given this repository you should copy the `.env.sample` file into an `.env` file inserting your own credentials.  
 Run `yarn install --check-files`  
 Run `bundle install`  
 Run `rails s`  
