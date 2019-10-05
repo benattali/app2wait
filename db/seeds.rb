@@ -15,97 +15,97 @@ puts "Generating Users"
 cuervo = User.new(email: 'axelresnik@gmail.com',
             password: '123456',
             username: 'Cuervo',
-            remote_photo_url: 'https://res.cloudinary.com/dn4gmiobc/image/upload/v1561971341/dkimxfxzsauhsl7ijsvh.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570304795/cuervo_mktey8.jpg',
             average_lateness: rand(0..25))
 
 marko = User.new(email: 'marko@app2wait.com',
             password: '123456',
             username: 'Marko',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978082/gxn0tymnoggmdbhayhfn.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570304876/marko_tggpum.jpg',
             average_lateness: rand(0..25))
 
 ben = User.new(email: 'ben.attali8@gmail.com',
             password: '123456',
             username: 'Ben',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978084/f0ts7c7y3p6xmngnckxo.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570304916/ben_igxlsb.jpg',
             average_lateness: rand(0..25))
 
 benya = User.new(email: 'benya@app2wait.com',
             password: '123456',
             username: 'Benya',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978086/lrvevguguuho8951i7kf.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570305286/benya_xigrk7.jpg',
             average_lateness: rand(0..25))
 
 charly = User.new(email: 'charly@app2wait.com',
             password: '123456',
             username: 'Charly',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978087/uugd4jho6kjam6yaa0qh.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570304958/charly_yi5kf7.jpg',
             average_lateness: rand(0..25))
 
 clara = User.new(email: 'clara@app2wait.com',
             password: '123456',
             username: 'Clara',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978088/jqnkwefbacd9nfsw5k8w.jpg',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570305318/clara_ezxuge.jpg',
             average_lateness: rand(0..25))
 
 david = User.new(email: 'david@app2wait.com',
             password: '123456',
             username: 'David',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978090/evphzyzlqtjo4fux6ala.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570305351/david_qi3iax.jpg',
             average_lateness: rand(0..25))
 
 gaby = User.new(email: 'gaby@app2wait.com',
             password: '123456',
             username: 'Gaby',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978091/bvc2vczpy6isnjaeudox.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570304995/gaby_zoni0q.jpg',
             average_lateness: rand(0..25))
 
 ilan = User.new(email: 'szenkerilan@gmail.com',
             password: '123456',
             username: 'Ilan',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978092/nfsqulkptkrpbljaujdi.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570305030/ilan_sgufgv.jpg',
             average_lateness: rand(0..25))
 
 joe = User.new(email: 'joe@app2wait.com',
             password: '123456',
             username: 'Joe',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978361/tjjoec9fy9yhh2qt2yup.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570305070/joe_zzr2cs.png',
             average_lateness: rand(0..25))
 
 max = User.new(email: 'max@app2wait.com',
             password: '123456',
             username: 'Max',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978093/sfgut6oafmvrdbd6ev7j.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570305104/max_jzlhnr.jpg',
             average_lateness: rand(0..25))
 
 maya = User.new(email: 'maya@app2wait.com',
             password: '123456',
             username: 'Maya',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978094/e3mhhepfpnimwhz0yfma.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570305140/maya_r8qyth.jpg',
             average_lateness: rand(0..25))
 
 mel = User.new(email: 'mel@app2wait.com',
             password: '123456',
             username: 'Mel',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978096/nqwbbknexnqsf8twpusq.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570305173/mel_btlx9s.jpg',
             average_lateness: rand(0..25))
 
 rabea = User.new(email: 'rabea@app2wait.com',
             password: '123456',
             username: 'Rabea',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978097/g45lunatp16ywfmrxnit.jpg',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570305371/rabea_eimicf.jpg',
             average_lateness: rand(0..25))
 
 romy = User.new(email: 'romy@app2wait.com',
             password: '123456',
             username: 'Romy',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978098/t49zxpy7ueb7jajf0t5d.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570305208/romy_dv322e.jpg',
             average_lateness: rand(0..25))
 
 valentina = User.new(email: 'valentina@app2wait.com',
             password: '123456',
             username: 'Valentina',
-            remote_photo_url: 'http://res.cloudinary.com/dn4gmiobc/image/upload/v1561978364/o6z6zzjtrt3sxdfduzra.png',
+            remote_photo_url: 'https://res.cloudinary.com/dyseqqsmw/image/upload/v1570305240/val_mnbpka.jpg',
             average_lateness: rand(0..25))
 cuervo.save!
 marko.save!
@@ -130,22 +130,22 @@ puts "Generating challenges"
 
 
 pushups = Challenge.new(name: "Pushups",
-                        remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562170471/strong_1_pith7r.png")
+                        remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562770891/lwwb2sttdzwqihzc2cdb.png")
 
 the_dance = Challenge.new(name: "The Dance",
-                         remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562170516/dancing_lrsyen.png")
+                         remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562770893/t1t0txgr9hukth38w2j6.png")
 the_bill = Challenge.new(name: "The Bill",
-                           remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562170590/earnings_qqhonj.png")
+                           remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562770892/eaeytyecehfrr0yb81y0.png")
 the_phonecall = Challenge.new(name: "The Call",
-                         remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562170550/phone-call_kme56d.png")
+                         remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562770892/q8heut5bsbwza7vsb8bn.png")
 the_shot = Challenge.new(name: "The Shot",
-                         remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562170628/shot_zvlxd5.png")
+                         remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562770894/m1nzswtj7logq93feeuc.png")
 the_singing = Challenge.new(name: "The Singing",
-                         remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562170667/microphone_1_ut5jam.png")
+                         remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562770894/gdz42r1qunx3bxpxthaa.png")
 the_airguitare = Challenge.new(name: "Air guitar",
-                         remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562170688/acoustic-guitar_1_ls8w5k.png")
+                         remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562770895/dytpj2w4tebsy0oqag96.png")
 the_chilisauce = Challenge.new(name: "The Chili",
-                         remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562170710/chili-pepper_1_stsg1a.png")
+                         remote_photo_url: "https://res.cloudinary.com/dyseqqsmw/image/upload/v1562770895/cjo3xjxux6jchduu0qmx.png")
 
 
 
@@ -341,27 +341,27 @@ puts "Finished generating Groups/Users"
 
 puts "Generating Videos"
 
-Video.create!(remote_video_url: 'https://res.cloudinary.com/dyseqqsmw/video/upload/v1562769553/ben_push_ups_uwy9v1.mp4',
+Video.create!(remote_video_url: 'https://res.cloudinary.com/dyseqqsmw/video/upload/v1562770902/h7edsocnigbgzpgalkcp.mp4',
               challenge_id: pushups.id,
               user_id: clara.id,
               tag: "Ben doesn't want to be late anymore!")
-Video.create!(remote_video_url: 'https://res.cloudinary.com/dyseqqsmw/video/upload/v1562769609/romi_chicken_dance_m30asu.mp4',
+Video.create!(remote_video_url: 'https://res.cloudinary.com/dyseqqsmw/video/upload/v1562770910/vugjkpatlytbk5vimykp.mp4',
               challenge_id: the_dance.id,
               user_id: benya.id,
               tag: "Chicken dance!")
-Video.create!(remote_video_url: 'https://res.cloudinary.com/dyseqqsmw/video/upload/v1562769647/bryan_shot_rjtdq7.mp4',
+Video.create!(remote_video_url: 'https://res.cloudinary.com/dyseqqsmw/video/upload/v1562850427/vljmwzuv0bcz65axxy26.mp4',
               challenge_id: the_shot.id,
               user_id: mel.id,
               tag: "Twas the beginning of the night...")
-Video.create!(remote_video_url: 'https://res.cloudinary.com/dyseqqsmw/video/upload/v1562769679/max_ait_guitare_hhd7ug.mp4',
+Video.create!(remote_video_url: 'https://res.cloudinary.com/dyseqqsmw/video/upload/v1562770922/xws98fh1b96zjn7jwsuc.mp4',
               challenge_id: the_airguitare.id,
               user_id: rabea.id,
               tag: "Elvis in da house")
-Video.create!(remote_video_url: 'https://res.cloudinary.com/dyseqqsmw/video/upload/v1562769718/Benya_sc3a9w.mp4',
+Video.create!(remote_video_url: 'https://res.cloudinary.com/dyseqqsmw/video/upload/v1562770926/yc8xzblubce5vbl8j9t8.mp4',
               challenge_id: the_singing.id,
               user_id: ben.id,
               tag: "He didn't want to sing!")
-Video.create!(remote_video_url: 'https://res.cloudinary.com/dyseqqsmw/video/upload/v1562769834/joe_chili_nxtcyr.mp4',
+Video.create!(remote_video_url: 'https://res.cloudinary.com/dyseqqsmw/video/upload/v1562770929/q9tu71h3yevrlu3krldb.mp4',
               challenge_id: the_chilisauce.id,
               user_id: marko.id,
               tag: "Chiliiiiiiiiii")
