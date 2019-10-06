@@ -10,11 +10,14 @@ Steps:
 4. Watch other people doing the challenges  
 5. Upload your friend doing the challenge you sent them
 
-# Installation
+## Installation
+#### Assuming you have ruby and rails installed, to run this app locally do the following:
+##### This section you do only once
+* Given this repository you should copy the `.env.sample` file into an `.env` file inserting your own credentials.  
+* Create a [cloudinary account](https://cloudinary.com/users/login) and add your API key to a .env file (which is already in gitignore)
+* Run `yarn install --check-files`  
+* Run `bundle install`  
+* Run `rails db:create db:migrate`
+* (OPTIONAL) run `rails db:seed` to add some pre-made islands  
 
-Given this repository you should copy the `.env.sample` file into an `.env` file inserting your own credentials.  
-Run `yarn install --check-files`  
-Run `bundle install`  
-Run `rails s`  
-
-When developing the website, you need to only re-run the last step `rails s` to server the website.
+##### When developing the website, you need to only run the following step `rails s` to server the website locally.
