@@ -12,7 +12,7 @@ Steps:
 
 ## Installation
 #### Assuming you have ruby and rails installed, to run this app locally do the following:
-##### This section you do only once
+##### This section should only be done once
 * Given this repository you should copy the `.env.sample` file into an `.env` file inserting your own credentials.  
 * Create a [cloudinary account](https://cloudinary.com/users/login) and add your API key to a .env file (which is already in gitignore)
 * Run `yarn install --check-files`  
