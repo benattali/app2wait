@@ -18,6 +18,6 @@ Steps:
 * Run `yarn install --check-files`  
 * Run `bundle install`  
 * Run `rails db:create db:migrate`
-* (OPTIONAL) run `rails db:seed` to add some pre-made islands  
+* (OPTIONAL) run `rails db:seed` to add some default pre-made data
 
 ##### When developing the website, you need to only run the following step `rails s` to server the website locally.
