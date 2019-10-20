@@ -1,5 +1,7 @@
 # Overview
 
+## [App2Wait](https://app-2-wait.herokuapp.com)
+
 This is a website which lets you challenge your friends for being late.  
 
 Steps:  
@@ -9,6 +11,7 @@ Steps:
 3. Edit the time for each part of the challenge  
 4. Watch other people doing the challenges  
 5. Upload your friend doing the challenge you sent them
+6. Don't forget to switch to a phone-sized browser
 
 ## Installation
 #### Assuming you have ruby and rails installed, to run this app locally do the following:
